@@ -1,5 +1,7 @@
 /* pages/home/components/goods/index.wxss */
+
 /* 标题 */
+
 .title {
   background-color: #fff;
   border-top: 20rpx solid #eee;
@@ -36,3 +38,43 @@
 }
 
 /* 商品 */
+
+.listTitle {
+  padding: 10rpx 0;
+  font-weight: normal;
+  background-color: #fff;
+}
+
+.moduleTitle {
+  display: inline-block;
+  height: 60rpx;
+  line-height: 60rpx;
+  background: linear-gradient(90deg, #f5863c, #ee3f3f);
+  color: #fff;
+  font-size: 26rpx;
+  border-top-right-radius: 30rpx;
+  border-bottom-right-radius: 30rpx;
+  padding: 0 40rpx 0 30rpx;
+}
+
+.readMore {
+  float: right;
+  line-height: 60rpx;
+  padding-right: 30rpx;
+  color: #999;
+  font-size: 26rpx;
+}
+
+.readMore:link, .readMore:visited {
+  color: #999;
+}
+
+.icon-go {
+  margin-left: 10rpx;
+}
+.purchase{
+  margin-top: 40rpx;
+}
+.purchase .moduleTitle {
+  background: linear-gradient(90deg,#f5863c,#f68f4a);
+}

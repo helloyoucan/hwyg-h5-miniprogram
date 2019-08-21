@@ -1,0 +1,14 @@
+<view class="goods-card">
+  <image class="goodsImg" src="{{goods.defaultImage}}" />
+  <view class="goodsInfo">
+    <view class="name gb-long-text">{{goods.productName}}
+      <text decode="{{true}}">&nbsp;</text>{{goods.totalAmount}}{{goods.unit}}</view>
+    <view class="infoItem">规格：{{goods.specification}}</view>
+    <view class="infoItem">发布时间：{{addedTime}}</view>
+
+    <view wx:if="{{goods.quoteType === 1}}" class="price"> {{goods.unitPrice}}
+      <text class="unit">元/{{goods.unit}}</text>
+    </view>
+    <view wx:else class="price">可议价</view>
+  </view>
+</view>

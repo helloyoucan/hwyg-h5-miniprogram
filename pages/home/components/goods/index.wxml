@@ -5,10 +5,20 @@
   <image class="right-img" src="./imgs/home_bg_decorate_right@3x.png" />
 </view>
 <view class="list-title">
-  <text>
-最新货源
-</text>
-  <text>查看更多
-    <iconFont class="icon-go" icon="nav_icon_go"/>
-</text>
+  <text class="moduleTitle">最新货源</text>
+  <rich-text class="readMore" decode="{{true}}">查看更多
+    <iconFont class="icon-go" icon="nav_icon_go" />
+  </rich-text>
+</view>
+<view>
+  <goodsItem wx:for="{{supplyList}}" wx:key="{{index}}" goods="{{item}}" />
+</view>
+<view class="list-title purchase">
+  <text class="moduleTitle">最新求购</text>
+  <rich-text class="readMore" decode="{{true}}">查看更多
+    <iconFont class="icon-go" icon="nav_icon_go" />
+  </rich-text>
+</view>
+<view>
+  <goodsItem wx:for="{{purchaselist}}" wx:key="{{index}}" goods="{{item}}" />
 </view>

@@ -21,10 +21,10 @@
 }
 
 .text-item {
+  font-size: 30rpx;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-size: 30rpx;
 }
 
 .text-item text {

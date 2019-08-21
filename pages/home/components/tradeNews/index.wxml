@@ -2,7 +2,7 @@
 <image class="icon-img" src="./imgs/home_bg_jycg@3x.png"/>
   <swiper class="text-swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}" vertical="{{vertical}}" duration="{{duration}}">
       <swiper-item  wx:for="{{listData}}" wx:key="{{index}}">
-        <view class="text-item" >
+        <view class="text-item gb-long-text" >
           <text >{{item.productName}}</text>{{item.amount}}{{item.unit}}<text decode="{{true}}">&nbsp;&nbsp;</text>单价<text>{{item.unitPrice}}元/{{item.unit}}</text><text decode="{{true}}">&nbsp;&nbsp;</text>总计<text>{{item.price}}元</text>
         </view>
       </swiper-item>
