@@ -1,0 +1,8 @@
+<view class="header">
+  <iconFont class="messageBtn" icon="nav_icon_message"/>
+  <view class="inputView">
+     <iconFont class="searchIcon" icon="nav_icon_search"/>
+     请输入产品名称
+  </view>
+  <iconFont class="addBtn" icon="nav_icon_issue"/>
+</view>

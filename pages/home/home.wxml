@@ -1,0 +1,13 @@
+<layout>
+  <view style="height:100%">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}" vertical="{{vertical}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:key="{{item}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image"  />
+        </swiper-item>
+      </block>
+    </swiper>
+    <tradeNews/>
+    <goods/>
+  </view>
+</layout>

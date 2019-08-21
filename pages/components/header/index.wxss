@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  height: 90rpx;
+  color: #fff;
+  background: linear-gradient(90deg, #f2693d, #cb191d);
+}
+
+.inputView {
+  flex-grow: 1;
+  display: inline-block;
+  width: 265rpx;
+  height: 64rpx;
+  margin: auto;
+  background-color: rgba(255,255,255, 0.2);
+  border-radius: 32rpx;
+  font-size: 30rpx;
+  line-height: 64rpx;
+  color: rgba(255,255,255, 0.5);
+}
+
+.searchIcon {
+  margin: 0 24rpx 0 32rpx;
+  vertical-align: middle;
+}
+
+.inputView:link, .inputView:visited {
+  color:  rgba(255,255,255, 0.5);
+}
+.messageBtn,
+.addBtn {
+  padding: 20rpx;
+  margin: 0 10rpx;
+  font-size: 30rpx;
+  line-height: 50rpx;
+}
+.messageBtn{
+  margin-right: 15rpx;
+}
+.addBtn {
+  margin-left: 20rpx;
+}
+.messageIcon,
+.searchIcon,
+.addIcon {
+  width: 38rpx;
+  height: 38rpx;
+  color: #fff;
+}

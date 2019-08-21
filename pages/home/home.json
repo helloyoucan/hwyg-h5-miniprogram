@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "tradeNews": "components/tradeNews/index",
+    "goods": "components/goods/index"
+  }
+}

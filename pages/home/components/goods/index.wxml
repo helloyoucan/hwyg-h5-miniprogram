@@ -1,0 +1,14 @@
+<view class="title">
+  <image class="left-img" src="./imgs/home_bg_decorate_left@3x.png" />
+  <image class="hot-img" src="./imgs/home_icon_hot@3x.png" />
+  <text>为你推荐</text>
+  <image class="right-img" src="./imgs/home_bg_decorate_right@3x.png" />
+</view>
+<view class="list-title">
+  <text>
+最新货源
+</text>
+  <text>查看更多
+    <iconFont class="icon-go" icon="nav_icon_go"/>
+</text>
+</view>

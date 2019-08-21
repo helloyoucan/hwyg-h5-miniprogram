@@ -1,13 +1,36 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/home/home",
+    "pages/goods/goods",
+    "pages/auction/auction"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#eee",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "洪湾渔港海鲜交易",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/goods/goods",
+        "text": "商品"
+      },
+      {
+        "pagePath": "pages/auction/auction",
+        "text": "竞拍"
+      }
+    ]
+  },
+  "usingComponents": {
+    "Header": "pages/components/header/index",
+    "iconFont": "pages/components/iconFont/index",
+    "layout": "pages/components/layout/index"
   },
   "sitemapLocation": "sitemap.json"
 }

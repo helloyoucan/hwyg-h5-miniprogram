@@ -1,0 +1,38 @@
+/* pages/home/components/goods/index.wxss */
+/* 标题 */
+.title {
+  background-color: #fff;
+  border-top: 20rpx solid #eee;
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-img, .right-img {
+  width: 200rpx;
+  height: 16rpx;
+}
+
+.left-img {
+  margin-right: 20rpx;
+}
+
+.right-img {
+  margin-left: 20rpx;
+}
+
+.hot-img {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+
+.title text {
+  /* line-height:90rpx; */
+  font-size: 30rpx;
+  color: #ee3f3f;
+  font-weight: bold;
+}
+
+/* 商品 */

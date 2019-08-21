@@ -1,0 +1,7 @@
+.layout{
+  display: grid;
+  grid-template-rows: 90rpx 1fr;
+}
+.content{
+  overflow: auto;
+}

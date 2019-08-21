@@ -1,0 +1,32 @@
+/* pages/home/components/index.wxss */
+
+.text-swiper {
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.tradeNews {
+  /* background-size: 78rpx 78rpx; *//* background-position: 30rpx 20rpx; */
+  padding: 20rpx 10rpx 20rpx 20rpx;
+  height: 80rpx;
+  overflow: hidden;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 120rpx 1fr;
+}
+
+.icon-img {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.text-item {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 30rpx;
+}
+
+.text-item text {
+  color: #cb191d;
+}

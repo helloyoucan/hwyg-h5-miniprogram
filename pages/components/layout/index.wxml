@@ -1,0 +1,4 @@
+<view class="layout">
+  <Header />
+ <view class="content"> <slot></slot> </view>
+</view>
