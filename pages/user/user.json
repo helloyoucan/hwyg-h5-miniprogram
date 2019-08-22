@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "header":"components/header/index",
+    "buyer": "components/buyer/index",
+    "seller":"components/seller/index"
+  }
+}

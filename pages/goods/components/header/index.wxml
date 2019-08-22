@@ -1,0 +1,10 @@
+<view class="header">
+  <view class="tabs" bind:tap="onTapType">
+    <view class="{{'tabItem'+ (activeType===goodsTypes.supply?' active':'')}}" data-type="{{goodsTypes.supply}}">供应信息</view>
+    <view class="{{'tabItem'+ (activeType===goodsTypes.purchase?' active':'')}}" data-type="{{goodsTypes.purchase}}">求购信息</view>
+  </view>
+  <view class="btnGruop">
+    <iconFont class="searchBtn" icon="nav_icon_search" />
+    <iconFont class="plusBtn" icon="nav_icon_issue" />
+  </view>
+</view>

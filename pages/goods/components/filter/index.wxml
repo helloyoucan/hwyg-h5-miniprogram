@@ -1,0 +1,61 @@
+<!--pages/goods/components/filter/index.wxml-->
+
+<view class="filter">
+  <view class="{{'label'+ (activeType===filterType.price?' active':'')}}">
+    <view data-type="{{filterType.price}}" bind:tap="onTapTabLabel">
+      价格
+      <iconFont class="iconDown" icon="icon_arrows_more" />
+    </view>
+    <view class="content">
+      <view class="filterList price" style="{{'height:'+ (activeType===filterType.price?(filterList.price.length*80+'rpx'):'0')}}" bind:tap="onTapListItem">
+        <view wx:for="{{filterList.price}}" wx:key="{{index}}" class="{{'listItem' +(filter.price===item.value?' active':'')}})" data-value="{{item.value}}" data-type="{{filterType.price}}">
+          {{item.text}}
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="{{'label'+ (activeType===filterType.storage?' active':'')}}">
+    <view data-type="{{filterType.storage}}" bind:tap="onTapTabLabel">
+      存储类型
+      <iconFont class="iconDown" icon="icon_arrows_more" />
+    </view>
+    <view class="content">
+      <view class="filterList storage" style="{{'height:'+ (activeType===filterType.storage?(filterList.storage.length*80+'rpx'):'0')}}"  bind:tap="onTapListItem">
+        <view wx:for="{{filterList.storage}}" wx:key="{{index}}" class="{{'listItem' +(filter.storage===item?' active':'')}})"  data-value="{{item}}" data-type="{{filterType.storage}}">
+          {{item}}
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="{{'label'+ (activeType===filterType.fish?' active':'')}}">
+    <view data-type="{{filterType.fish}}" bind:tap="onTapTabLabel">渔获类型
+      <iconFont class="iconDown" icon="icon_arrows_more" />
+    </view>
+    <view class="content">
+      <view class="filterList fish" style="{{'height:'+ (activeType===filterType.fish?(filterList.fish.length*80+'rpx'):'0')}}"  bind:tap="onTapListItem">
+        <view wx:for="{{filterList.fish}}" wx:key="{{index}}" class="{{'listItem' +(filter.fish===item?' active':'')}})" data-value="{{item}}" data-type="{{filterType.fish}}">
+          {{item}}
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 分类 -->
+  <view class="{{'label'+ (activeType===filterType.category?' active':'')}}">
+    <view data-type="{{filterType.category}}" bind:tap="onTapTabLabel">
+      <iconFont class="iconClassify" icon="icon_classify" />分类
+      <iconFont class="iconDown" icon="icon_arrows_more" />
+    </view>
+    <view class="content category">
+      <!-- 一级分类 -->
+      <view class="categoryList" bind:tap="onTapCategoryList">
+        <view wx:for="{{filterList.category}}" wx:key="{{index}}" data-categoryId="{{item.id}}" class="{{'categoryItem' +(activeCategory===item.id?' active':'')}}）">
+          {{item.text}}
+        </view>
+      </view>
+      <!-- 二级分类 -->
+      <view class="categoryConetnt" bind:tap="onTapFishType">
+        <view wx:for="{{categoryConetnt}}" wx:key="{{index}}" data-fishId="{{item.id}}" class="{{'fishType' + (filter.category===item.id?' active':'')}}">{{item.text}}</view>
+      </view>
+    </view>
+  </view>
+</view>

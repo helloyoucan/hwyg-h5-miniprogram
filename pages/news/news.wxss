@@ -1,4 +1,4 @@
-/* pages/auction.wxss */
+/* pages/news/index.wxss */
 view{
   text-align: center;
   font-size: 30rpx;

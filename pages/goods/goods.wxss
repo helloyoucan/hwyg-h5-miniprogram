@@ -1,0 +1,4 @@
+.goodsList{
+  height: calc(100vh - 90rpx - 80rpx);
+  overflow: auto;
+}

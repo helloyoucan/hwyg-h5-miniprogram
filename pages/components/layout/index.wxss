@@ -4,4 +4,5 @@
 }
 .content{
   overflow: auto;
+  height: calc(100vh - 90rpx);
 }

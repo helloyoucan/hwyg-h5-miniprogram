@@ -1,0 +1,133 @@
+/* pages/goods/components/filter/index.wxss */
+
+.filter {
+  display: grid;
+  grid-template-columns: 188rpx 1fr 1fr 186rpx;
+  background: linear-gradient(90deg, #f2693d, #cb191d);
+  text-align: center;
+  line-height: 80rpx;
+  color: #666;
+  font-size: 26rpx;
+}
+
+.label {
+  background-color: #fff;
+}
+
+.label:first-child {
+  border-top-left-radius: 25rpx;
+}
+
+.label:last-child {
+  border-top-right-radius: 25rpx;
+}
+
+.iconDown, .iconClassify {
+  margin-right: 10rpx;
+}
+
+.content {
+  height: 0;
+  /* transition: height 5s; *//* height: calc(100vh - 80rpx - 80rpx); */
+  overflow: auto;
+  background-color: transparent;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.filterList {
+  height: 0;
+  /* transition: height 0.3s; */
+  overflow: hidden;
+}
+
+.listItem {
+  padding-left: 30rpx;
+  line-height: 80rpx;
+  font-size: 26rpx;
+  color: #666;
+  text-align: left;
+  position: relative;
+  background-color: #fff;
+}
+
+.listItem.active {
+  color: #ee3f3f;
+}
+
+.listItem::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #eee;
+}
+
+.active.label {
+  color: #ee3f3f;
+}
+
+.active .content {
+  height: calc(100vh - 80rpx - 80rpx);
+}
+
+.active .filterList {
+  transition: height 0.3s ease-in-out;
+}
+
+.active .content.category {
+  transition: height 0.3s ease-in-out;
+}
+
+.content.category {
+  display: grid;
+  grid-template-columns: 140rpx 1fr;
+  background: #fff;
+}
+
+.categoryList {
+  height: 100%;
+  overflow: auto;
+}
+
+.categoryList {
+  background-color: #eee;
+}
+
+.categoryItem {
+  padding: 0 10rpx;
+  color: #333;
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.active.categoryItem {
+  color: #cb191d;
+  background-color: #fff;
+}
+.categoryConetnt{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 20rpx;
+}
+.fishType{
+  background-color: #eee;
+  line-height: 30rpx;
+  height: 30rpx;
+  font-size: 30rpx;
+  border-radius: 25rpx;
+  padding: 10rpx 20rpx;
+  color: #333;
+  margin-right: 20rpx;
+}
+.active.fishType{
+  background-color: #cb191d;
+  color: #fff;
+}

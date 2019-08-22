@@ -1,0 +1,19 @@
+<!--pages/user/components/header/index.wxml-->
+<view class="header">
+  <image class="bgImg" src="./imgs/my_bg_top@3x.b5223dd9.png" />
+  <view class="iconGroup">
+    <iconFont class="iconItem" icon="nav_nav_icon_set" />
+    <iconFont class="iconItem" icon="nav_icon_message" />
+  </view>
+  <view class="userContent">
+    <view class="userIcon">
+      <image class="userAvatar" src="{{userInfo.avatarUrl}}" />
+      <iconFont class="iconEdit" icon="icon_edit" />
+    </view>
+    <view class="userInfo">
+      <view class="userName">{{userInfo.nickName}}</view>
+      <view class="authTag"> <iconFont class="iconV" icon="icon_vip" />个人认证</view>
+    </view>
+  </view>
+  <view>切换为卖家</view>
+</view>
