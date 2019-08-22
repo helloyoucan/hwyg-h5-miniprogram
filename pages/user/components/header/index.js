@@ -12,13 +12,12 @@ Component({
    * 组件的初始数据
    */
   data: {
-    userInfo: {},
+    userInfo: { nickName:'用户名'},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   lifetimes: {
     attached: function() {
-      console.log(this.data)
       // 在组件实例进入页面节点树时执行
       if (app.globalData.userInfo) {
         this.setData({

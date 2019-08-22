@@ -1,2 +1,37 @@
 <!--pages/user/components/seller/index.wxml-->
-<text>pages/user/components/seller/index.wxml</text>
+<view class="seller">
+  <view class="switchBtn" bind:tap="onTapSwitchBtn">切换为买家</view>
+  <!-- 交易看板 -->
+  <view class="orderLabel">
+    交易看板
+  </view>
+  <view class="orderEntryList count">
+    <view class="orderEntryItem count" wx:for="{{tradeListData}}" wx:key="{{index}}">
+      <view class="panleCountValue">{{item.value}}</view>
+      <view>{{item.text}}</view>
+    </view>
+  </view>
+  <!-- 交易看板-end -->
+  <!-- 订单管理 -->
+  <view class="orderLabel">
+    订单管理
+  </view>
+  <view class="orderEntryList">
+    <view class="orderEntryItem" wx:for="{{orderEntrys}}" wx:key="{{index}}">
+      <iconFont class="icon" icon="{{item.icon}}" />
+      <view>{{item.text}}</view>
+    </view>
+  </view>
+  <!-- 订单管理-end -->
+  <!-- 交易管理 -->
+  <view class="orderLabel">
+    交易管理
+  </view>
+  <view class="orderEntryList">
+    <view class="orderEntryItem" wx:for="{{tradeEntrys}}" wx:key="{{index}}">
+      <iconFont class="icon" icon="{{item.icon}}" />
+      <view>{{item.text}}</view>
+    </view>
+  </view>
+  <!-- 交易管理-end -->
+</view>

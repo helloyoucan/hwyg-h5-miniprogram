@@ -15,5 +15,4 @@
       <view class="authTag"> <iconFont class="iconV" icon="icon_vip" />个人认证</view>
     </view>
   </view>
-  <view>切换为卖家</view>
 </view>

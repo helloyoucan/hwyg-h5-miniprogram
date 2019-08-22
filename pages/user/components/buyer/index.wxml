@@ -1,2 +1,23 @@
 <!--pages/user/components/buyer/index.wxml-->
-<text>pages/user/components/buyer/index.wxml</text>
+<view class="buyer">
+  <view class="switchBtn" bind:tap="onTapSwitchBtn">切换为卖家</view>
+  <view class="orderLabel">
+    订单管理
+  </view>
+  <view class="orderEntryList">
+    <view class="orderEntryItem" wx:for="{{orderEntrys}}" wx:key="{{index}}">
+      <iconFont class="icon" icon="{{item.icon}}" />
+      <view>{{item.text}}</view>
+    </view>
+  </view>
+  <view class="entryPanel">
+    <view class="entryItem" wx:for="{{entryPanelMidList}}" wx:key="{{index}}">{{item.text}}
+      <iconFont class="rightIcon" icon="nav_icon_go" />
+    </view>
+  </view>
+  <view class="entryPanel">
+    <view class="entryItem" wx:for="{{entryPanelBottomList}}" wx:key="{{index}}">{{item.text}}
+      <iconFont class="rightIcon" icon="nav_icon_go" />
+    </view>
+  </view>
+</view>

@@ -1,2 +1,6 @@
 <!--pages/user/index.wxml-->
-<header/>
+<view class="user">
+  <header/>
+  <buyer wx:if="{{activeContentType===contentType.buyer}}" toType="{{contentType.seller}}" bind:changeType="onTapSwitch" />
+  <seller wx:if="{{activeContentType===contentType.seller}}" toType="{{contentType.buyer}}" bind:changeType="onTapSwitch" />
+</view>

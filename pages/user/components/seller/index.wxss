@@ -1,1 +1,92 @@
 /* pages/user/components/seller/index.wxss */
+
+.seller {
+  position: relative;
+  z-index: 2;
+  padding: 0 30rpx 30rpx;
+  margin-top: -80rpx;
+  line-height: 1;
+}
+
+.switchBtn {
+  position: absolute;
+  z-index: 2;
+  top: -90rpx;
+  left: 50%;
+  margin-left: -101rpx;
+  width: 202rpx;
+  line-height: 50rpx;
+  border-radius: 25rpx;
+  font-size: 26rpx;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.orderLabel {
+  text-align: center;
+  background: #fff;
+  line-height: 80rpx;
+  font-size: 26rpx;
+  color: #666;
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+  position: relative;
+  font-weight: normal;
+}
+
+.orderLabel::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #e1e1e1;
+}
+
+.orderEntryList {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  overflow: hidden;
+}
+
+.orderEntryItem {
+  /* display: inline-block; */
+  width: 230rpx;
+  height: 176rpx;
+  text-align: center;
+}
+
+.orderEntryItem .icon {
+  display: block;
+  color: #ee3f3f;
+  padding: 40rpx 0 24rpx;
+  margin: 0 auto;
+  font-size: 28px;
+}
+
+.orderEntryItem view {
+  color: #666;
+  font-size: 26rpx;
+}
+
+.orderEntryList +.orderLabel {
+  margin-top: 30rpx;
+}
+
+.count.orderEntryItem {
+  min-height: 170rpx;
+  height: auto;
+}
+
+.count .panleCountValue {
+  font-size: 38rpx;
+  color: #333;
+  font-weight: bold;
+  padding: 44rpx 10rpx 28rpx;
+  word-break: break-all;
+}
