@@ -1,0 +1,48 @@
+/* pages/auction/components/sceneCard/index.wxss */
+.sceneCard {
+  background-color: #fff;
+  border-radius: 10rpx;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30rpx;
+  line-height: 1;
+}
+.sceneImg {
+  display: block;
+  height: 364rpx;
+  width: 100%;
+  background-color: #ddd;
+}
+.sceneName {
+  padding: 30rpx 30rpx 20rpx;
+  color: #333;
+  font-size: 38rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: bold;
+}
+.sceneInfo {
+  display: flex;
+  padding: 0 30rpx 30rpx;
+  font-size: 26rpx;
+  color: #999;
+  line-height: 1;
+  flex-wrap: wrap;
+ 
+}
+ .sceneInfo view {
+    display: inline-block;
+    padding: 10rpx 0;
+    width: 50%;
+  }
+.status {
+  position: absolute;
+  left: 0;
+  top: 20rpx;
+}
+.count{
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+}

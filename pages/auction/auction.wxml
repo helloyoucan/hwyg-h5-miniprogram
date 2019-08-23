@@ -1,2 +1,17 @@
 <!--pages/auction.wxml-->
-<view>待完善</view>
+<header tabList="{{headerTabList}}" activeTabType="{{activeHeaderTabType}}" bind:changeType="changeActiveHeaderTabType" />
+<view class="nullData" wx:if="{{activeListData.length===0}}">
+  <image src="./imgs/nodata.png" />
+  <text>暂无数据</text>
+</view>
+<view class="sealList" wx:if="{{activeListData.length>0&&activeHeaderTabType==='0'}}">
+  <view class="layout">
+    <auctionCard wx:for="{{activeListData}}" wx:key="{{index}}" auction="{{item}}" />
+  </view>
+</view>
+
+<view class="sceneList" wx:if="{{activeListData.length>0&&(activeHeaderTabType==='1'||activeHeaderTabType==='2'||activeHeaderTabType==='3')}}">
+  <view class="layout">
+    <sceneCard wx:for="{{activeListData}}" wx:key="{{index}}" scene="{{item}}" />
+  </view>
+</view>

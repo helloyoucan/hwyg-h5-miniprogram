@@ -1,4 +1,4 @@
 .goodsList{
-  height: calc(100vh - 90rpx - 80rpx);
+  height: calc(100vh - 90rpx - 80rpx - 1rpx);
   overflow: auto;
 }

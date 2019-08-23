@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "header": "./components/header/index",
+    "sceneCard": "./components/sceneCard/index",
+    "auctionCard": "./components/auctionCard/index"
+  }
 }

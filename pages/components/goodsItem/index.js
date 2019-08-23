@@ -10,7 +10,7 @@ Component({
       value:null,
       observer:function(newVal){
         this.setData({
-          addedTime: util.formatTime(new Date(newVal.addedTime))
+          addedTime: util.parseTime(newVal.addedTime,'{m}/{d} {h}:{i}')
         })
       }
     }

@@ -8,10 +8,12 @@
   line-height: 80rpx;
   color: #666;
   font-size: 26rpx;
+  margin-top: -1rpx;
 }
 
 .label {
   background-color: #fff;
+  margin-left: -1rpx;
 }
 
 .label:first-child {
@@ -72,7 +74,7 @@
 }
 
 .active .content {
-  height: calc(100vh - 80rpx - 80rpx);
+  height: calc(100vh - 90rpx - 80rpx);
 }
 
 .active .filterList {

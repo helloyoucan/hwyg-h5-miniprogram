@@ -1,0 +1,43 @@
+/* pages/auction/components/header/index.wxss */
+
+.header {
+  height: 180rpx;
+  background: linear-gradient(90deg, #f2693d, #cb191d);
+}
+
+.title {
+  color: #fff;
+  line-height: 90rpx;
+  font-size: 36rpx;
+  text-align: center;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tabItem {
+  flex-grow: 1;
+  font-size: 30rpx;
+  color: #fff;
+  text-align: center;
+  opacity: 0.6;
+  position: relative;
+  line-height: 90rpx;
+}
+
+.tabItem.active {
+  opacity: 1;
+}
+
+.tabItem.active::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 2rpx;
+  transform: translateX(-50%);
+  width: 30%;
+  height: 4rpx;
+  background-color: #fff;
+  border-radius: 2rpx;
+}

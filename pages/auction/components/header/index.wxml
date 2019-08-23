@@ -1,0 +1,9 @@
+<!--pages/auction/components/header/index.wxml-->
+<view class="header">
+  <view class="title">竞价大厅</view>
+  <view class="tabs" bind:tap="onTapTab">
+    <view wx:for="{{tabList}}" wx:key="{{index}}" data-type="{{item.type}}" class="{{'tabItem'+(activeTabType===item.type?' active':'')}}">
+      {{item.text}}
+    </view>
+  </view>
+</view>

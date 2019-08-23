@@ -1,2 +1,37 @@
 <!--pages/news/index.wxml-->
-<view>待完善</view>
+<layout>
+  <view wx:for="{{listData}}" wx:key="{{index}}">
+    <!-- 无图片 -->
+    <view class="newsCard" wx:if="{{item.imgs.length===0}}">
+      <view class="title">
+        {{item.title}}
+      </view>
+      <view class="pushTime">{{item.createTime}}</view>
+      <view class="viewCount">
+        <iconFont class="viewIcon" icon="icon_eye_open" />{{item.checkNumber}}</view>
+    </view>
+    <!-- 无图片-end -->
+    <!-- 一个||两个图片 -->
+    <view class="newsCard oneImgCard" wx:if="{{item.imgs.length>0&&item.imgs.length<3}}">
+      <image src="{{item.imgs[0]}}" class="newsImg" />
+      <view class="newsInfo">
+        <view class="title">{{item.title}}</view>
+        <view class="pushTime">{{item.createTime}}</view>
+        <view class="viewCount">
+          <iconFont class="viewIcon" icon="icon_eye_open" />{{item.checkNumber}}</view>
+      </view>
+    </view>
+    <!-- 一个||两个图片-end -->
+    <!-- 两个图片以上 -->
+    <view class="newsCard threeImgCard" wx:if="{{item.imgs.length>=3}}">
+      <view class="title">{{item.title}}</view>
+      <view class="imgGroup">
+        <image wx:for="{{item.imgs}}" src="{{item}}" wx:key="{{index}}" class="newsImg" />
+      </view>
+      <view class="pushTime">{{item.createTime}}</view>
+      <view class="viewCount">
+        <iconFont class="viewIcon" icon="icon_eye_open" />{{item.checkNumber}}</view>
+    </view>
+    <!-- 两个图片以上-end -->
+  </view>
+</layout>

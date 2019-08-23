@@ -1,7 +1,82 @@
 /* pages/news/index.wxss */
-view{
-  text-align: center;
+
+.newsCard {
+  padding: 36rpx 30rpx 84rpx;
+  position: relative;
+  line-height: 1;
+}
+
+.newsCard::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 30rpx;
+  right: 30rpx;
+  height: 1px;
+  background-color: #e1e1e1;
+}
+
+.title {
   font-size: 30rpx;
-  line-height: 100vh;
-  clear: #333;
+  color: #333;
+  font-weight: bold;
+  line-height: 40rpx;
+  height: 80rpx;
+  margin-top: -5rpx;
+  overflow: hidden;
+}
+
+.pushTime {
+  position: absolute;
+  bottom: 30rpx;
+  left: 30rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.viewCount {
+  position: absolute;
+  right: 30rpx;
+  bottom: 30rpx;
+  font-size: 26rpx;
+  color: #999;
+  line-height: 32rpx;
+  padding: 0 12rpx;
+  border-radius: 16rpx;
+  background-color: #f1f1f1;
+}
+
+.viewIcon {
+  width: 26rpx;
+  height: 26rpx;
+  margin-right: 10rpx;
+}
+
+.oneImgCard {
+  display: flex;
+  padding-bottom: 30rpx;
+}
+
+.newsImg {
+  display: inline-block;
+  width: 210rpx;
+  height: 150rpx;
+  border-radius: 10rpx;
+  background-color: #eee;
+}
+
+.newsInfo {
+  padding-left: 30rpx;
+  position: relative;
+  flex-grow: 1;
+  padding-bottom: 30rpx;
+  margin-bottom: -30rpx;
+}
+
+.imgGroup {
+  margin-top: 15rpx;
+}
+
+.imgGroup .newsImg+ .newsImg {
+  margin-left: 30rpx;
 }

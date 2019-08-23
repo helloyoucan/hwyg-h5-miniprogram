@@ -1,0 +1,16 @@
+<!--pages/auction/components/sceneCard/index.wxml-->
+<view class="sceneCard">
+  <image src="{{scene.coverUrls}}" class="sceneImg" />
+  <view class="styles.sceneName">
+    {{scene.name}}
+  </view>
+  <view class="sceneInfo">
+    <view>开始时间：{{beginTime}}</view>
+    <view>标的数量：{{scene.corporeCount}}</view>
+    <view>结束时间：{{endTime}}</view>
+    <view>参与人数：{{scene.participants}}</view>
+  </view>
+  <!-- <TimerCount beginTime={scene.beginTime} endTime={scene.endTime} bidType={scene.bidType} status={scene.status} />
+  <StatusJSX className={styles.status} status={scene.status} />
+  <CountTag className={styles.count} status={scene.status} lookCount={scene.onlookNumber} bidCount={scene.bidNumber} /> -->
+</view>

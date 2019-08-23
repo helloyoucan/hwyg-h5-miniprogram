@@ -1,7 +1,73 @@
 /* pages/auction.wxss */
-view{
-  text-align: center;
-  font-size: 30rpx;
-  line-height: 100vh;
-  clear: #333;
+
+.nullData {
+  height: calc(100vh - 180rpx);
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.nullData image {
+  width: 250rpx;
+  height: 340rpx;
+}
+
+.nullData text {
+  font-size: 24rpx;
+  color: #999;
+  padding-top: 30rpx;
+}
+
+.sealList {
+  height: calc(100vh - 220rpx);
+  overflow: auto;
+  position: relative;
+  background-color: transparent;
+   padding-top:40rpx;
+}
+
+.sealList::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 80rpx;
+  background: linear-gradient(90deg, #f2693d, #cb191d);
+}
+
+.sealList .layout {
+  position: relative;
+  z-index: 2;
+  padding: 30rpx 30rpx 0;
+  background-color: #fff;
+  border-top-left-radius:25rpx;
+  border-top-right-radius: 25rpx;
+  overflow: hidden;
+}
+.sceneList {
+  height: calc(100vh - 180rpx);
+  overflow: auto;
+  position: relative;
+  background-color: #f2f2f2;
+}
+.sceneList::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 180rpx;
+  background: linear-gradient(90deg, #f2693d, #cb191d);
+}
+.sceneList .layout{
+   position: relative;
+  z-index: 2;
+    background-color: transparent;
+    padding: 40rpx 30rpx 0;
+}
+

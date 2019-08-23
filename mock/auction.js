@@ -1,0 +1,319 @@
+const sealList = [{
+  "title": "红衫鱼",
+  "status": 3,
+  "startPrice": "1500",
+  "beginTime": 1559303340000,
+  "endTime": 1559303400000,
+  "corpore": {
+    "name": "红衫鱼",
+    "quantity": 1200,
+    "measureUnit": "斤"
+  },
+  "summary": {
+    "currentPrice": 3000,
+    "bidNumber": 1
+  },
+  "coverUrls": "https://resource.hongwanyg.com/hwyg/M00/00/30/wKgAr1waib6AHpnGAASL94-pHg0000.png",
+  "dealPrice": "3000",
+  "dealTime": 1559303400000,
+  "bidType": 3
+}, {
+  "title": "马鲛鱼",
+  "status": 3,
+  "startPrice": "2500",
+  "beginTime": 1559303700000,
+  "endTime": 1559303760000,
+  "corpore": {
+    "name": "马鲛鱼",
+    "quantity": 1200,
+    "measureUnit": "斤"
+  },
+  "summary": {
+    "currentPrice": 2500,
+    "bidNumber": 1
+  },
+  "coverUrls": "https://resource.hongwanyg.com/hwyg/M00/00/48/CgoHE1zZM6iAbZO9AAA1GvaVRbY641.jpg",
+  "dealPrice": "2500",
+  "dealTime": 1559303760000,
+  "bidType": 3
+}, {
+  "title": "石斑鱼",
+  "status": 3,
+  "startPrice": "3000",
+  "beginTime": 1559303580000,
+  "endTime": 1559303640000,
+  "corpore": {
+    "name": "石斑鱼",
+    "quantity": 2000,
+    "measureUnit": "斤"
+  },
+  "summary": {
+    "currentPrice": 6000,
+    "bidNumber": 1
+  },
+  "coverUrls": "https://resource.hongwanyg.com/hwyg/M00/00/30/wKgAr1waiBiAB4DTAALzSKMIMdA628.png",
+  "dealPrice": "6000",
+  "dealTime": 1559303640000,
+  "bidType": 3
+}, {
+  "title": "红衫鱼",
+  "status": 3,
+  "startPrice": "2200",
+  "beginTime": 1559526480000,
+  "endTime": 1559526540000,
+  "corpore": {
+    "name": "红衫鱼",
+    "quantity": 2000,
+    "measureUnit": "斤"
+  },
+  "summary": {
+    "currentPrice": 2500,
+    "bidNumber": 1
+  },
+  "coverUrls": "https://resource.hongwanyg.com/hwyg/M00/00/30/wKgAr1waib6AHpnGAASL94-pHg0000.png",
+  "dealPrice": "2500",
+  "dealTime": 1559526540000,
+  "bidType": 3
+}, {
+  "title": "大眼鸡",
+  "status": 3,
+  "startPrice": "2200",
+  "beginTime": 1559527440000,
+  "endTime": 1559527500000,
+  "corpore": {
+    "name": "大眼鸡",
+    "quantity": 1500,
+    "measureUnit": "斤"
+  },
+  "summary": {
+    "currentPrice": 2400,
+    "bidNumber": 1
+  },
+  "coverUrls": "https://resource.hongwanyg.com/hwyg/M00/00/30/wKgAr1waiGiASG4vAAPxcXHH8ps719.jpg",
+  "dealPrice": "2400",
+  "dealTime": 1559527500000,
+  "bidType": 3
+}, {
+  "title": "红衫鱼",
+  "status": 3,
+  "startPrice": "2000",
+  "beginTime": 1559527560000,
+  "endTime": 1559527620000,
+  "corpore": {
+    "name": "红衫鱼",
+    "quantity": 1500,
+    "measureUnit": "斤"
+  },
+  "summary": {
+    "currentPrice": 2200,
+    "bidNumber": 1
+  },
+  "coverUrls": "https://resource.hongwanyg.com/hwyg/M00/00/30/wKgAr1waib6AHpnGAASL94-pHg0000.png",
+  "dealPrice": "2200",
+  "dealTime": 1559527620000,
+  "bidType": 3
+}, {
+  "title": "大眼鸡",
+  "status": 3,
+  "startPrice": "3000",
+  "beginTime": 1559529960000,
+  "endTime": 1559530020000,
+  "corpore": {
+    "name": "大眼鸡",
+    "quantity": 1500,
+    "measureUnit": "斤"
+  },
+  "summary": {
+    "currentPrice": 6000,
+    "bidNumber": 1
+  },
+  "coverUrls": "https://resource.hongwanyg.com/hwyg/M00/00/30/wKgAr1waiGiASG4vAAPxcXHH8ps719.jpg",
+  "dealPrice": "6000",
+  "dealTime": 1559530020000,
+  "bidType": 3
+}, {
+  "title": "马头鱼",
+  "status": 3,
+  "startPrice": "1000",
+  "beginTime": 1559530080000,
+  "endTime": 1559530140000,
+  "corpore": {
+    "name": "马头鱼",
+    "quantity": 1200,
+    "measureUnit": "斤"
+  },
+  "summary": {
+    "currentPrice": 1500,
+    "bidNumber": 1
+  },
+  "coverUrls": "https://resource.hongwanyg.com/hwyg/M00/00/30/wKgAr1wahriAGp0CAAVc_sOSyxQ654.png",
+  "dealPrice": "1500",
+  "dealTime": 1559530140000,
+  "bidType": 3
+}, {
+  "title": "红衫鱼",
+  "status": 3,
+  "startPrice": "1800",
+  "beginTime": 1559548800000,
+  "endTime": 1559548860000,
+  "corpore": {
+    "name": "红衫鱼",
+    "quantity": 2500,
+    "measureUnit": "斤"
+  },
+  "summary": {
+    "currentPrice": 2500,
+    "bidNumber": 1
+  },
+  "coverUrls": "https://resource.hongwanyg.com/hwyg/M00/00/30/wKgAr1waib6AHpnGAASL94-pHg0000.png",
+  "dealPrice": "2500",
+  "dealTime": 1559548860000,
+  "bidType": 3
+}, {
+  "title": "红衫鱼",
+  "status": 3,
+  "startPrice": "2000",
+  "beginTime": 1559611800000,
+  "endTime": 1559611860000,
+  "corpore": {
+    "name": "红衫鱼",
+    "quantity": 1500,
+    "measureUnit": "斤"
+  },
+  "summary": {
+    "currentPrice": 3800,
+    "bidNumber": 6
+  },
+  "coverUrls": "https://resource.hongwanyg.com/hwyg/M00/00/30/wKgAr1waib6AHpnGAASL94-pHg0000.png",
+  "dealPrice": "900000",
+  "dealTime": 1559611860000,
+  "bidType": 3
+}]
+
+const previousSceneList = [{
+  "beginTime": 1559782500000,
+  "endTime": 1559785200000,
+  "corporeCount": 12,
+  "coverUrls": "https://resource.hongwanyg.com/hwyg/M00/00/30/wKgAr1waib6AHpnGAASL94-pHg0000.png",
+  "name": "6月6日竞价专场",
+  "onlookNumber": 66,
+  "status": 2,
+  "dealNumber": 5,
+  "participants": 9,
+  "bidType": 1,
+  "bidNumber": 7
+}, {
+  "beginTime": 1559780580000,
+  "endTime": 1559782380000,
+  "corporeCount": 9,
+  "coverUrls": "https://resource.hongwanyg.com/hwyg/M00/00/30/wKgAr1waib6AHpnGAASL94-pHg0000.png",
+  "name": "6月6日竞价专场",
+  "onlookNumber": 114,
+  "status": 2,
+  "dealNumber": 8,
+  "participants": 38,
+  "bidType": 1,
+  "bidNumber": 61
+}, {
+  "beginTime": 1559779560000,
+  "endTime": 1559779680000,
+  "corporeCount": 1,
+  "coverUrls": "https://resource.hongwanyg.com/hwyg/M00/00/30/wKgAr1waib6AHpnGAASL94-pHg0000.png",
+  "name": "6月6日竞价专场",
+  "onlookNumber": 18,
+  "status": 2,
+  "dealNumber": 1,
+  "participants": 5,
+  "bidType": 1,
+  "bidNumber": 3
+}, {
+  "beginTime": 1559777100000,
+  "endTime": 1559777340000,
+  "corporeCount": 2,
+  "coverUrls": "https://resource.hongwanyg.com/hwyg/M00/00/30/wKgAr1waiGiASG4vAAPxcXHH8ps719.jpg",
+  "name": "洪湾渔港2019年06月06日竞价专场",
+  "onlookNumber": 57,
+  "status": 2,
+  "dealNumber": 2,
+  "participants": 17,
+  "bidType": 1,
+  "bidNumber": 13
+}, {
+  "beginTime": 1559731440000,
+  "endTime": 1559731680000,
+  "corporeCount": 2,
+  "coverUrls": "https://resource.hongwanyg.com/hwyg/M00/00/30/wKgAr1waib6AHpnGAASL94-pHg0000.png",
+  "name": "6月5日竞价专场",
+  "onlookNumber": 3,
+  "status": 2,
+  "dealNumber": 1,
+  "participants": 1,
+  "bidType": 1,
+  "bidNumber": 1
+}, {
+  "beginTime": 1559730600000,
+  "endTime": 1559730840000,
+  "corporeCount": 2,
+  "coverUrls": "https://resource.hongwanyg.com/hwyg/M00/00/30/wKgAr1wahriAGp0CAAVc_sOSyxQ654.png",
+  "name": "6月5日竞价专场",
+  "onlookNumber": 1,
+  "status": 2,
+  "dealNumber": 0,
+  "participants": 0,
+  "bidType": 1,
+  "bidNumber": 0
+}, {
+  "beginTime": 1559730000000,
+  "endTime": 1559730360000,
+  "corporeCount": 2,
+  "coverUrls": "https://resource.hongwanyg.com/hwyg/M00/00/30/wKgAr1waib6AHpnGAASL94-pHg0000.png",
+  "name": "6月5日竞价专场",
+  "onlookNumber": 5,
+  "status": 2,
+  "dealNumber": 1,
+  "participants": 1,
+  "bidType": 1,
+  "bidNumber": 3
+}, {
+  "beginTime": 1559727420000,
+  "endTime": 1559729340000,
+  "corporeCount": 10,
+  "coverUrls": "https://resource.hongwanyg.com/hwyg/M00/00/30/wKgAr1waiGiASG4vAAPxcXHH8ps719.jpg",
+  "name": "6月5日竞价专场",
+  "onlookNumber": 5,
+  "status": 2,
+  "dealNumber": 1,
+  "participants": 2,
+  "bidType": 1,
+  "bidNumber": 2
+}, {
+  "beginTime": 1559725380000,
+  "endTime": 1559726880000,
+  "corporeCount": 8,
+  "coverUrls": "https://resource.hongwanyg.com/hwyg/M00/00/30/wKgAr1waiGiASG4vAAPxcXHH8ps719.jpg",
+  "name": "6月5日竞价专场",
+  "onlookNumber": 57,
+  "status": 2,
+  "dealNumber": 7,
+  "participants": 19,
+  "bidType": 1,
+  "bidNumber": 24
+}, {
+  "beginTime": 1559724300000,
+  "endTime": 1559725200000,
+  "corporeCount": 5,
+  "coverUrls": "https://resource.hongwanyg.com/hwyg/M00/00/30/wKgAr1waiGiASG4vAAPxcXHH8ps719.jpg",
+  "name": "6月5日竞价专场",
+  "onlookNumber": 42,
+  "status": 2,
+  "dealNumber": 4,
+  "participants": 11,
+  "bidType": 1,
+  "bidNumber": 17
+}]
+module.exports = {
+  sealList,
+  todaySceneList:[],
+  futureSceneList:[],
+  previousSceneList
+}

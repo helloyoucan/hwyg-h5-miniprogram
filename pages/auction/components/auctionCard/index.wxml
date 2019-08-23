@@ -1,0 +1,19 @@
+<!--pages/auction/components/auctionCard/index.wxml-->
+<view class="auctionCard">
+  <image class="auctionImg" src="{{auction.coverUrls}}" />
+  <view class="auctionInfo">
+    <view class="name">
+      <text class="nameText">{{auction.title}}</text><text decode="{{true}}">&nbsp;</text>
+      <text class="quantity">{{auction.corpore.quantity}}{{auction.corpore.measureUnit}}</text>
+    </view>
+    <view class="bindCount">{{auction.summary.bidNumber}}次出价</view>
+    <view class="currentPrice">
+      当前价
+      <text class="price">{{auction.summary.currentPrice}}</text>
+      <text class="unit">元/{{auction.corpore.measureUnit}}</text>
+    </view>
+    <view class="timer"><text decode="{{true}}">结束时间&nbsp;&nbsp;</text>{{endTime}}</view>
+    <!-- <TimerCount beginTime={auction.beginTime} endTime={auction.dealTime?auction.dealTime:auction.endTime} bidType={auction.bidType} class="timer" status={auction.status} />
+    <Status2JSX class="tag" status={auction.status} /> -->
+  </view>
+</view>

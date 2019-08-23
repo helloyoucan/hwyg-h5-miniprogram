@@ -1,0 +1,75 @@
+/* pages/auction/components/auctionCard/index.wxss */
+
+.auctionCard {
+  background-color: #fff;
+  display: flex;
+  margin-bottom: 30rpx;
+  line-height: 1;
+}
+
+.auctionImg {
+  width: 280rpx;
+  height: 280rpx;
+  background-color: #ddd;
+  border-radius: 10rpx;
+  flex-shrink: 0;
+}
+
+.auctionInfo {
+  flex-grow: 1;
+  margin-left: 30rpx;
+  position: relative;
+  width: calc(100% - 280rpx r 30rpx);
+}
+
+.name {
+  padding: 20rpx 105rpx 30rpx 0;
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+}
+
+.nameText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.quantity {
+  flex-shrink: 0;
+}
+
+.bindCount, .currentPrice {
+  font-size: 26rpx;
+  color: #999;
+  margin-bottom: 30rpx;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 30rpx;
+  color: #ee3f3f;
+}
+
+.unit {
+  color: #ee3f3f;
+}
+
+.timer {
+  /* position: absolute; */
+  border-radius: 25rpx;
+  background-color: #f8f8f8;
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 50rpx;
+  height: 50rpx;
+  color: #999;
+}
+
+.tag {
+  position: absolute;
+  z-index: 2;
+  top: 20rpx;
+  right: 0rpx;
+}
